@@ -143,7 +143,7 @@ namespace ImageFilter
             // apply filter
             System.Drawing.Bitmap newImage = filter.Apply(image);
 
-            picOutput.BackgroundImage = newImage;
+            picOutput.BackgroundImage = newImage "BOLD";
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -205,7 +205,7 @@ namespace ImageFilter
             playerControl.NewFrame += new VideoSourcePlayer.NewFrameHandler(playerControl_NewFrame);
 
             // create nested video source, for example JPEGStream
-            AForge.Video.JPEGStream stream = new JPEGStream( "some url" );
+            AForge.Video.JPEGStream stream = new JPEGStream( "www.youtube.com" );
             // create video source
             IVideoSource videoSource =  new AsyncVideoSource( stream );
             // start playing it
